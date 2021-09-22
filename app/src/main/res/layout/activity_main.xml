@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/labelskorcom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Skor 0"
+        android:textAlignment="center"
+        android:textColor="#FF0033"
+        android:textSize="20sp"
+        android:textStyle="normal|bold"
+        app:layout_constraintEnd_toEndOf="@+id/img_kertas_com"
+        app:layout_constraintStart_toStartOf="@+id/img_kertas_com"
+        app:layout_constraintTop_toBottomOf="@+id/img_kertas_com" />
+
+    <TextView
+        android:id="@+id/labelskorpemain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Skor 0"
+        android:textAlignment="center"
+        android:textColor="#00137E"
+        android:textSize="20sp"
+        android:textStyle="normal|bold"
+        app:layout_constraintEnd_toEndOf="@+id/img_kertas_player"
+        app:layout_constraintStart_toStartOf="@+id/img_kertas_player"
+        app:layout_constraintTop_toBottomOf="@+id/img_kertas_player" />
+
+    <TextView
+        android:id="@+id/labeljudulpemain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:text="Player"
+        android:textAlignment="center"
+        android:textColor="#00137E"
+        android:textSize="20sp"
+        android:textStyle="normal|bold"
+        app:layout_constraintBottom_toTopOf="@+id/img_gunting_player"
+        app:layout_constraintEnd_toEndOf="@+id/img_gunting_player"
+        app:layout_constraintStart_toStartOf="@+id/img_gunting_player" />
+
+    <TextView
+        android:id="@+id/labeljudulcom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:text="Computer"
+        android:textAlignment="center"
+        android:textColor="#FF0000"
+        android:textSize="20sp"
+        android:textStyle="normal|bold"
+        app:layout_constraintBottom_toTopOf="@+id/img_gunting_com"
+        app:layout_constraintEnd_toEndOf="@+id/img_gunting_com"
+        app:layout_constraintStart_toStartOf="@+id/img_gunting_com" />
+
+    <TextView
+        android:id="@+id/labelpemenang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:rotation="-30"
+        android:text=""
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="normal|bold"
+        app:layout_constraintBottom_toTopOf="@+id/gd_hor_60"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/gd_hor_40" />
+
+    <TextView
+        android:id="@+id/tv_judul_gunting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="Gunting"
+        android:textAlignment="center"
+        android:textColor="#FF5722"
+        android:textSize="25sp"
+        android:textStyle="normal|bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_judul_batu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Batu"
+        android:textAlignment="center"
+        android:textColor="#1739F3"
+        android:textSize="25sp"
+        android:textStyle="normal|bold"
+        app:layout_constraintEnd_toEndOf="@+id/tv_judul_gunting"
+        app:layout_constraintStart_toStartOf="@+id/tv_judul_gunting"
+        app:layout_constraintTop_toBottomOf="@+id/tv_judul_gunting" />
+
+    <TextView
+        android:id="@+id/tv_judul_kertas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Kertas"
+        android:textAlignment="center"
+        android:textColor="#00FF0A"
+        android:textSize="25sp"
+        android:textStyle="normal|bold"
+        app:layout_constraintEnd_toEndOf="@+id/tv_judul_batu"
+        app:layout_constraintStart_toStartOf="@+id/tv_judul_batu"
+        app:layout_constraintTop_toBottomOf="@+id/tv_judul_batu" />
+
+    <ImageView
+        android:id="@+id/img_kertas_com"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        app:srcCompat="@drawable/kertas"
+        app:layout_constraintBottom_toTopOf="@+id/gd_hor_80"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/gd_ver_50"
+        app:layout_constraintTop_toTopOf="@+id/gd_hor_60" />
+
+    <ImageView
+        android:id="@+id/img_batu_com"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+
+        app:srcCompat="@drawable/batu"
+        app:layout_constraintBottom_toTopOf="@+id/gd_hor_60"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/gd_ver_50"
+        app:layout_constraintTop_toTopOf="@+id/gd_hor_40" />
+
+    <ImageView
+        android:id="@+id/img_gunting_player"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginRight="30dp"
+        app:srcCompat="@drawable/gunting"
+        app:layout_constraintBottom_toTopOf="@+id/gd_hor_40"
+        app:layout_constraintEnd_toStartOf="@+id/gd_ver_50"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/gd_hor_20" />
+
+    <ImageView
+        android:id="@+id/img_gunting_com"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        app:srcCompat="@drawable/gunting"
+        app:layout_constraintBottom_toTopOf="@+id/gd_hor_40"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/gd_ver_50"
+        app:layout_constraintTop_toTopOf="@+id/gd_hor_20" />
+
+    <ImageView
+        android:id="@+id/img_batu_player"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginRight="30dp"
+        app:srcCompat="@drawable/batu"
+        app:layout_constraintBottom_toTopOf="@+id/gd_hor_60"
+        app:layout_constraintEnd_toStartOf="@+id/gd_ver_50"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/gd_hor_40" />
+
+    <ImageView
+        android:id="@+id/img_kertas_player"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginRight="30dp"
+        app:srcCompat="@drawable/kertas"
+        app:layout_constraintBottom_toTopOf="@+id/gd_hor_80"
+        app:layout_constraintEnd_toStartOf="@+id/gd_ver_50"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/gd_hor_60" />
+
+    <ImageView
+        android:id="@+id/img_refresh"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        app:srcCompat="@drawable/refresh"
+        app:layout_constraintStart_toEndOf="@+id/labelskorcom"
+        app:layout_constraintTop_toTopOf="@+id/labelskorcom" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gd_ver_50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gd_hor_20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gd_hor_40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.4" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gd_hor_60"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.6" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gd_hor_80"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.8" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
